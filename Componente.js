@@ -1,11 +1,11 @@
 export default class Componente{
-    constructor(valor){
-        this._valor = valor;
+    constructor(dato){
+        this._dato = dato;
         this._izquierda = null;
         this._derecha = null;
     }
-    get valor(){
-        return this._valor;
+    get dato(){
+        return this._dato;
     }
     get izquierda(){
         return this._izquierda;
@@ -14,8 +14,8 @@ export default class Componente{
         return this._derecha;
     }
 
-    set valor(valor){
-        this._valor = valor;
+    set dato(dato){
+        this._dato = dato;
     }
     set izquierda(izquirda){
         this._izquierda = izquirda;
