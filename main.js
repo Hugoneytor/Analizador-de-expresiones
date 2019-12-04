@@ -1,6 +1,5 @@
-  
-import Componente from './Componente.js';
-import View from './View.js';
+import nodo from './nodo.js/index.js.js';
+import View from './Operacion.js/index.js';
 
 class Main{
     constructor(){

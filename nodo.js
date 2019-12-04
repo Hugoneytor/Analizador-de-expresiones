@@ -1,4 +1,4 @@
-export default class Componente{
+export default class Nodo{
     constructor(dato){
         this._dato = dato;
         this._izquierda = null;
@@ -17,8 +17,8 @@ export default class Componente{
     set dato(dato){
         this._dato = dato;
     }
-    set izquierda(izquirda){
-        this._izquierda = izquirda;
+    set izquierda(izquierda){
+        this._izquierda = izquierda;
     }
     set derecha(derecha){
         this._derecha = derecha;
