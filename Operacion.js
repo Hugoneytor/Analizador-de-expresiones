@@ -1,4 +1,4 @@
-export default class View{
+export default class Operacion{
     constructor(preOrder, postOrder){
         this._preOrder = preOrder;
         this._postOrder = postOrder;
@@ -47,6 +47,7 @@ export default class View{
     preOrder(){
         this._preOrder(this._nodo[this._nodo.length-1]);
     }
+    
     _preOrder(valor){
         this._Pila.push(valor);
         if(valor.izquierda!=null){

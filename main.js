@@ -1,9 +1,11 @@
-import nodo from './nodo.js/index.js.js';
-import View from './Operacion.js/index.js';
+
+
+import Nodo from './nodo.js';
+import Operacion from './Operacion.js';
 
 class Main{
     constructor(){
-        let view = new View(document.querySelector('#preorder'), document.querySelector('#posorder'));
+        let view = new Operacion(document.querySelector('#preorder'), document.querySelector('#posorder'));
         document.querySelector('#calcular').addEventListener('click', () => {
 
                 let valores = new Array();
@@ -22,13 +24,13 @@ class Main{
                 }
                 for(let i=0;i<valores.length;i++){
                     
-                    let componente = new Componente(valores[i]);
-                    view.agregarComponente(componente);
+                    let nodo = new Nodo(valores[i]);
+                    view.agregarNodo(nodo);
                 }
                 view.crearArbol();
                 view.preOrder();
                 view.posOrder();
-                view.Calcular(resultado);
+
         })
     }
 }
